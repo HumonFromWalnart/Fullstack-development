@@ -18,7 +18,7 @@ export const UserProfile = () => {
                             </div>
                             <img src={cur.picture} id="picture"></img>
                             <div>{cur.line}</div>
-                            <a href={cur.email}>Contact Me Here</a>
+                            <a href={cur.email}>More about me</a>
                         </div>
                     );
                 })

@@ -2,32 +2,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('https://wallpaper.dog/large/5550998.png');
+    background-size: 2100px 1080px;
 }
 
 .BigBoiContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 3000px;
 }
 
 .BigContainer {
-    background-color: rgb(196, 0, 0);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.526);
 }
 
 .fullName {
     display: flex;
 }
 
-#firstName{
+#firstName {
     margin-right: 5px;
 }
 
 * {
     color: rgb(255, 228, 151);
+    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
