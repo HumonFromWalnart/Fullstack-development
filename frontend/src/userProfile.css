@@ -41,3 +41,27 @@ body {
     width: 300px;
     height: 250px;
 }
+
+.hiddenContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.409);
+}
+
+.BigContainer:hover .hiddenContainer{
+    animation: slide 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px)
+    }
+
+    100% {
+        transform: translateX(320px)
+    }
+}
