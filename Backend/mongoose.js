@@ -7,7 +7,12 @@ const UserSchema = new Schema({
     email: String,
     picture: String,
     line: String,
-    aka: String
+    aka: String,
+    weapons: {
+        primary: String,
+        secondary : String,
+        melee : String
+    }
     // registerDate: { type: Date, default: Date.now },
 }, { versionKey: false });
 

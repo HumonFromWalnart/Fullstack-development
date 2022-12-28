@@ -13,7 +13,20 @@ export const UserProfile = () => {
                 data.map((cur) => {
                     return (
                         <div className="BigContainer">
-                            <div className="hiddenContainer">
+                            <div className="inventory">
+                                <img src={cur.weapons?.primary} id="weaponMain"></img>
+                                <p>Shotgun</p>
+                                <div className="secondHand">
+                                    <div id="Secondary">
+                                        <img src={cur.weapons?.secondary} id="weapon"></img>
+                                        <p>Pistol</p>
+                                    </div>
+                                    <div id="Melee">
+                                        <img src={cur.weapons?.melee} id="weapon"></img>
+                                        <p>Wrench</p>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="fullName">
                                 <div id="firstName">{cur.firstName}</div>
                                 <div id="lastName">{cur.lastName}</div>
@@ -21,7 +34,6 @@ export const UserProfile = () => {
                             <img src={cur.picture} id="picture"></img>
                             <div>{cur.line}</div>
                             <a href={cur.email}>More about me</a>
-                            </div>
                         </div>
                     );
                 })
