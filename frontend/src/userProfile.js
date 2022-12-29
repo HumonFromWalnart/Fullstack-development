@@ -15,17 +15,20 @@ export const UserProfile = () => {
                         <div className="BigContainer">
                             <div className="inventory">
                                 <img src={cur.weapons?.primary} id="weaponMain"></img>
-                                <p>Shotgun</p>
+                                {/* <p>Shotgun</p> */}
                                 <div className="secondHand">
                                     <div id="Secondary">
-                                        <img src={cur.weapons?.secondary} id="weapon"></img>
-                                        <p>Pistol</p>
+                                        r        <img src={cur.weapons?.secondary} id="weapon"></img>
+                                        {/* <p>Pistol</p> */}
                                     </div>
                                     <div id="Melee">
                                         <img src={cur.weapons?.melee} id="weapon"></img>
-                                        <p>Wrench</p>
+                                        {/* <p>Wrench</p> */}
                                     </div>
                                 </div>
+                            </div>
+                            <div className="tape">
+                                <a href={cur.email} id='link'>More about me</a>
                             </div>
                             <div className="fullName">
                                 <div id="firstName">{cur.firstName}</div>
@@ -33,7 +36,6 @@ export const UserProfile = () => {
                             </div>
                             <img src={cur.picture} id="picture"></img>
                             <div>{cur.line}</div>
-                            <a href={cur.email}>More about me</a>
                         </div>
                     );
                 })

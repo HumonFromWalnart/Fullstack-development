@@ -2,7 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://wallpaper.dog/large/5550998.png');
+    /* background-image: url('https://static.vecteezy.com/system/resources/thumbnails/015/488/329/original/seamless-dark-wooden-planks-wall-texture-seamless-loop-video.jpg'); */
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/181189fb-b5a4-4adb-8058-46537ca3e167/d8k1s2g-5780185e-f59a-4005-8551-d90638e6a777.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE4MTE4OWZiLWI1YTQtNGFkYi04MDU4LTQ2NTM3Y2EzZTE2N1wvZDhrMXMyZy01NzgwMTg1ZS1mNTlhLTQwMDUtODU1MS1kOTA2MzhlNmE3NzcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5jufTdaQ6xSRau_WcYQNEq_uvJUumWdk43tNiwGaulI');
     background-size: 2100px 1080px;
 }
 
@@ -10,7 +11,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 3000px;
+    rotate: -5deg;
+    height: 3600px;
 }
 
 .BigContainer {
@@ -19,7 +21,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(173, 82, 70);
+    background-image: url('https://img.freepik.com/premium-photo/grunge-background-black-white-old-wall_130147-711.jpg');
+    background-size: 500px 500px;
+    width: 500px;
+    height: 500px;
     /* background-color: rgb(173, 82, 70); */
     transition: 1s;
 }
@@ -28,58 +33,89 @@ body {
     display: flex;
 }
 
+.tape {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: url('https://o.remove.bg/downloads/8ff1fc03-5a2c-4d86-a658-e77a15bdddfa/grunge-movie-film-strip-vintage-filmstrip-frame_53500-1227-removebg-preview.png');
+    background-size: 500px 500px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
 #firstName {
     margin-right: 5px;
 }
 
 * {
-    color: rgb(255, 228, 151);
+    /* color: rgb(255, 228, 151); */
+    color: rgba(255, 255, 255, 0.804);
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 0 0 10px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, ;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    font-size: 20px;
 }
 
 #picture {
     margin: 10px;
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
 }
 
 .inventory {
-    width: 320px;
-    height: 324px;
+    width: 497px;
+    height: 497px;
     position: absolute;
     text-align: center;
     display: flex;
+    border: 3px solid black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.707);
     background-image: url('https://i.kym-cdn.com/photos/images/original/000/537/633/1cb.gif');
-    background-size: 320px 324px;
+    background-size: 500px 500px;
     transition: 1s;
     z-index: -1;
 }
 
-#weaponMain{
-    width: 300px;
-    height: 100px;
+#weaponMain {
+    width: 400px;
+    height: 200px;
 }
 
-#weapon{
-    width: 150px;
-    height: 110px;
+#weapon {
+    width: 200px;
+    height: 200px;
 }
 
-.secondHand{
+.secondHand {
     display: flex;
 }
 
 .BigContainer:hover .inventory {
-    transform: translateX(320px);
+    transform: translateX(499px);
+    border-radius: 10px;
 }
 
-#text{
-   display: flex;
-   flex-direction: column;
+#text {
+    display: flex;
+    flex-direction: column;
+}
+
+#link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-bottom: 97px;
+    text-shadow: 0 0 20px white;
+    transition: 0.5s;
+}
+
+#link:hover{
+    color: white;
+}
+
+input:focus::placeholder{
+    color: transparent;
 }
