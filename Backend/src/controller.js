@@ -10,11 +10,12 @@ const createUser = async (req, res, next) => {
         res
             .status(400)
             .json({ message: "it includess your whole information" })
-    }
-    const createUser = await User.create({ ...req.body });
-    res
-        .status(201)
-        .json({ message: 'new user has created', data: createUser })
+    } 
+        const createUser = await User.create({ ...req.body });
+        res
+            .status(201)
+            .json({ message: 'new user has created', data: createUser })
+    
 }
 
 export default createUser;

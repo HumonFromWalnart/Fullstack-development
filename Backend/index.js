@@ -1,7 +1,7 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import connect from './connect.js';
-import router from './router.js';
+import connect from './src/connect.js';
+import router from './src/router.js';
 import cors from 'cors';
 
 const port = 6942;

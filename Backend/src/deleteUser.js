@@ -1,11 +1,11 @@
 import Post from "./mongoose.js";
 
 const deleteUser = async (req, res) => {
-    const {id} = req.params;
+    const {firstName} = req.params;
     try {
-        const deleted = await Post.findByIdAndDelete(id);
+        const deleted = await Post.findOneAndDelete(firstName);
         res.status(200).json({
-            message: `User with ${id} id got deleted`,
+            message: `User with ${firstName} id got deleted`,
             data: deleted
         })
     } catch (err) {
