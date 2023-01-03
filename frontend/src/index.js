@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { LogIn } from './logIn.js';
 // import { UserProfile } from './userProfile.js
 import Source from './mainSource.js';
 import { SignUp } from './signUp.js';
@@ -11,9 +12,9 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Source>
-
                 <Routes>
-                    <Route path={'/'} element={<SignUp />} />
+                    <Route path={'/signUp'} element={<SignUp />} />
+                    <Route path={'/logIn'} element={<LogIn />} />
                     <Route path={'/LoadingScreen'} element={<UserProfile />} />
                 </Routes>
             </Source>
