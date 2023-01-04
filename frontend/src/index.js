@@ -6,6 +6,7 @@ import { LogIn } from './logIn.js';
 import Source from './mainSource.js';
 import { SignUp } from './signUp.js';
 import { UserProfile } from './userProfile.js';
+import WelcomePage from './welcome.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
         <BrowserRouter>
             <Source>
                 <Routes>
+                    <Route path={'/'} element={<WelcomePage />} />
                     <Route path={'/signUp'} element={<SignUp />} />
                     <Route path={'/logIn'} element={<LogIn />} />
                     <Route path={'/LoadingScreen'} element={<UserProfile />} />

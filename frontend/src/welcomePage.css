@@ -1,0 +1,140 @@
+body {
+    background-image: url('http://i.imgur.com/SL4gc.jpg');
+    background-size: 2050px 1080px;
+}
+
+.title{
+    height: 20px;
+}
+
+.mercenaries{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 1800px;
+}
+
+.navbar {
+    display: flex;
+    width: 1800px;
+    height: 50px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.options {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+#gif{
+    width: 24.2px;
+    height: 24.2px;
+    opacity: 0.3;
+}
+
+.row{
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+}
+
+/* 
+#pointing {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin-left: 1455px;
+    margin-top: -50px;
+    z-index: -1;
+} */
+
+#soldier {
+    scale: 0.2;
+    rotate: 220deg;
+    position: absolute;
+    margin-left: 1560px;
+    margin-top: -410px;
+}
+
+.logInContainer {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+}
+
+#joiningBackText {
+    font-size: 10px;
+    margin-right: -100px;
+}
+
+#logIn:hover {
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+#signIn:hover {
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+/* #engi {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 3;
+}
+
+#sold {
+    width: 400px;
+    height: 400px;
+}
+
+#heav {
+    width: 400px;
+    height: 400px;
+}
+
+#medi {
+    width: 400px;
+    height: 400px;
+    margin-left: 150px;
+    position: absolute;
+    z-index: 1;
+}
+
+#spy {
+    width: 400px;
+    height: 400px;
+}
+
+#demo {
+    width: 400px;
+    height: 400px;
+}
+
+#bonk {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 160px;
+    z-index: 1;
+}
+
+#piss {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-top: 270px;
+    margin-right: 100px;
+    z-index: 2;
+}
+
+#pyro {
+    width: 400px;
+    position: absolute;
+    height: 400px;
+    margin-left: 150px;
+} */
