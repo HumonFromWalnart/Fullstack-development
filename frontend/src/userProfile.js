@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import LikeButton from "./likeButton";
 import { UserData } from "./mainSource";
 import './userProfile.css'
 
@@ -7,7 +8,6 @@ export const UserProfile = () => {
     const { data } = useContext(UserData);
 
     return (
-
         <div className="BigBoiContainer">
             {
                 data.map((cur) => {
@@ -29,6 +29,7 @@ export const UserProfile = () => {
                             </div>
                             <div className="tape">
                                 <a href={cur.email} id='link'>More about me</a>
+                                <LikeButton />
                             </div>
                             <div className="fullName">
                                 <div id="firstName">{cur.firstName}</div>
